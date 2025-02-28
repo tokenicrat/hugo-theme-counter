@@ -1,0 +1,5 @@
+baseURL: https://hugo-theme-counter.workers.dev/
+languageCode: zh-cn
+title: "「计数器」主题演示"
+
+theme: counter
