@@ -3,6 +3,7 @@ languageCode: zh
 title: "「计数器」主题演示"
 
 theme: counter
+enableRobotsTXT: true
 
 params:
   fancyTitle: "👁️‍🗨️ 「计数器」演示"

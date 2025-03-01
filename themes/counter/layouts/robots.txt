@@ -1,7 +1,7 @@
 User-agent: *
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-Disallow:
-{{- else }}
-Disallow: /
-{{- end }}
-Sitemap: {{ "sitemap.xml" | absURL }}
+
+{{ range .Data.Pages }}
+{{ if .Params.disallow }}
+Disallow: {{ .RelPermalink }}
+{{ end }}
+{{ end }}
