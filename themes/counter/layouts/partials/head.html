@@ -3,3 +3,6 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+{{ if site.Params.favicon}}
+<link rel="icon" href="{{ site.Params.favicon | absURL }}">
+{{ end }}

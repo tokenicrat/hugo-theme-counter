@@ -1,22 +1,112 @@
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC');
+
+:root {
+  --background: #f5f5f5;
+  --text: #333333;
+  --link: #007bff;
+  --fade-text: #6c757d;
+  --navbar: #c5c5c5;
+  --edge: #444444;
+  --img-radius: 0.5rem;
 }
 
-header {
-  border-bottom: 1px solid #222;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #333333;
+    --text: #f5f5f5;
+    --link: #1e90ff;
+    --navbar: #444444;
+    --edge: #c5c5c5;
+    --fade-text: #6c757d;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 60%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: var(--navbar);
+  color: var(--text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--edge);
+}
+
+.navbar h1 {
+  font-family: "Noto Serif SC";
+  font-size: 1.5rem;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+}
+
+.navbar a {
+  font-family: "Noto Sans SC";
+  font-size: 1rem;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif SC";
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+  color: var(--fade-text);
+  font-size: 0.8rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 a {
-  color: #00e;
+  color: var(--link);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--img-radius);
+  padding: 0.5rem;
+}
+
+img.banner {
+  padding-top: 2rem;
+}
+
+main {
+  padding-top: 60px;
 }

@@ -3,3 +3,13 @@ languageCode: zh-cn
 title: "「计数器」主题演示"
 
 theme: counter
+
+params:
+  copyright: "使用 CC0 授权，允许您自由使用。"
+  favicon: "/favicon.ico"
+  banner: "/banner.png"
+  menu:
+  - name: "首页"
+    url: "/"
+  - name: "关于"
+    url: "/about/"
