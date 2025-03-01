@@ -1,7 +1,12 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+  <ul class="home-list">
+    {{ range site.RegularPages }}
+      <li class="home-list item">
+        <a class="home-list title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <p class="home-list date">{{ .Date | time.Format ":date_long" }} | {{ .ReadingTime }} min </div>
+      </li>
+    {{ end }}
+  </ul>
+  
 {{ end }}

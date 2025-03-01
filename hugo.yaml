@@ -1,15 +1,16 @@
 baseURL: https://hugo-theme-counter.workers.dev/
-languageCode: zh-cn
+languageCode: zh
 title: "「计数器」主题演示"
 
 theme: counter
 
 params:
+  fancyTitle: "👁️‍🗨️ 「计数器」演示"
   copyright: "使用 CC0 授权，允许您自由使用。"
   favicon: "/favicon.ico"
   banner: "/banner.png"
   menu:
-  - name: "首页"
-    url: "/"
-  - name: "关于"
+  - name: "❓ 关于"
     url: "/about/"
+  - name: "🏠 首页"
+    url: "/"
