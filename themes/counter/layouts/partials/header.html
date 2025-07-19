@@ -1,8 +1,0 @@
-<div class="navbar">
-    <h1>{{ site.Params.fancyTitle }}</h1>
-    {{ if site.Params.menu }}
-        {{ range site.Params.menu }}
-            <a href="{{ .url }}">{{ .name }}</a>
-        {{ end }}
-    {{ end }}
-</div>

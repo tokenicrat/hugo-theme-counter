@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }}
+  <h1>博客组</h1>
+  <ul class="article-list">
+    {{ range where site.Sections "Path" "not in" (slice "/archives" "/topics") }}
+    <li class="article-list item">
+      <a class="article-list title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p class="article-list summary">{{ .Summary }}</p>
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}

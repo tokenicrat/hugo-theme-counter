@@ -1,24 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&&family=Noto+Sans+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap');
 
 :root {
-  --background: #f5f5f5;
-  --text: #333333;
-  --link: #007bff;
+  --background: #333333;
+  --text: #f5f5f5;
+  --link: #1e90ff;
+  --navbar: #444444;
+  --edge: #555555;
   --fade-text: #6c757d;
-  --navbar: #e5e5e5;
-  --edge: #bbbbbb;
-  --img-radius: 4px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #333333;
-    --text: #f5f5f5;
-    --link: #1e90ff;
-    --navbar: #444444;
-    --edge: #555555;
-    --fade-text: #6c757d;
-  }
+  --quote-txt: #008000;
+  --img-radius: 2px;
 }
 
 body {
@@ -27,7 +17,7 @@ body {
   max-width: 60%;
   margin: auto;
   font-size: 16px;
-  font-family: "Noto Sans Mono", "Noto Sans SC";
+  font-family: "Noto Sans Mono", "Noto Sans SC", "Noto Color Emoji", sans-serif;
 }
 
 .navbar {
@@ -42,19 +32,18 @@ body {
   border-bottom: 1px solid var(--edge);
 }
 
-.navbar h1 {
-  font-family: "Noto Serif SC";
-  font-size: 1.5rem;
+.navbar img {
   margin: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   float: left;
   padding-left: 1rem;
+  height: 60px;
 }
 
-.navbar a {
-  font-family: "Noto Sans Mono", "Noto Sans SC";
+.navbar .nav {
+  font-family: "Noto Sans Mono", "Noto Sans SC", "Noto Color Emoji", sans-serif;
   font-size: 1rem;
   margin: auto;
   position: relative;
@@ -76,7 +65,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif SC";
   font-weight: normal;
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -84,13 +72,18 @@ h6 {
 }
 
 h1 {
+  font-family: "Noto Serif SC", "Noto Color Emoji", serif;
   font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
   font-weight: bold;
 }
 
 footer {
   color: var(--fade-text);
-  font-size: 0.8rem;
+  font-size: 14px;
   padding: 2rem;
   text-align: center;
 }
@@ -104,10 +97,16 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
+main img {
+  display: block;
+  max-width: 60%;
+  margin: auto;
   border-radius: var(--img-radius);
   padding: 0.5rem;
+}
+
+footer img {
+  padding-top: 0.5rem;
 }
 
 img.banner {
@@ -119,45 +118,49 @@ main {
   font-size: 16px;
 }
 
-.home-list {
+.article-list {
   box-sizing: border-box;
 }
 
-.home-list:first-child {
+.article-list:first-child {
   border-top-left-radius: var(--img-radius);
   border-top-right-radius: var(--img-radius);
 }
 
-.home-list .item:first-child {
+.article-list .item:first-child {
   border-top: 1px solid var(--edge);  
 }
 
-.home-list:last-child {
+.article-list:last-child {
   border-bottom-left-radius: var(--img-radius);
   border-bottom-right-radius: var(--img-radius);
 }
 
-.home-list .date {
+.article-list .date {
   margin: 0.5rem;
   color: var(--fade-text);
   font-size: 0.8rem;
 }
 
-.home-list .title {
+.article-list .summary {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+.article-list .title {
   margin-left: 0.5rem;
   font-size: 1.5rem;
 }
 
-.home-list a {
+.article-list a {
   color: var(--text);
   text-decoration: none;
 }
 
-.home-list a:hover {
+.article-list a:hover {
   text-decoration: none;
 }
 
-.home-list .item {
+.article-list .item {
   list-style-type: none;
   border: 1px solid var(--edge);
   border-top: none;
@@ -167,4 +170,21 @@ main {
 
 .just-fade {
   color: var(--fade-text);
+}
+
+.just-fade a {
+  color: var(--fade-text);
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+blockquote {
+  color: var(--quote-txt);
+}
+
+code {
+  font-family: "Noto Sans Mono", "Noto Sans CJK SC", "Noto Color Emoji";
 }
