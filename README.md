@@ -2,6 +2,8 @@
 
 受 [当然我在扯淡](https://www.yinwang.org/) 风格启发的简明 Hugo 主题。效果预览请访问 [词元博客](https://blog.bytoken.link)。
 
+[English translation](https://github.com/tokenicrat/hugo-theme-counter/blob/main/README_en.md)
+
 ## 快速开始
 
 在已有的 Hugo 站点下执行：
