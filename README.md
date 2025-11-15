@@ -1,6 +1,6 @@
 # 计数器
 
-受 [当然我在扯淡](https://www.yinwang.org/) 风格启发的简明 Hugo 主题。效果预览请访问 [词元博客](https://blog.bytoken.link)。
+受 [当然我在扯淡](https://www.yinwang.org/) 风格启发的简明 Hugo 主题。
 
 [English translation](https://github.com/tokenicrat/hugo-theme-counter/blob/main/README_en.md)
 
@@ -82,7 +82,7 @@ params:
 
 ## 排错
 
-如果在构建站点时，Hugo 提示您版本过低，那是因为作者懒且使用 Arch Linux，在 `theme.toml` 里把最小版本设成了 `0.148.1`。大概率您的旧版本 Hugo 也能用，直接改掉就好。
+如果在构建站点时，Hugo 提示您版本过低，那是因为作者懒，在 `theme.toml` 里把最小版本设成了 `0.148.1`。大概率您的旧版本 Hugo 也能用，直接改掉就好。
 
 ## 协议
 
