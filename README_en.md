@@ -1,6 +1,6 @@
 # Counter
 
-A minimalist Hugo theme inspired by [Wang Yin's Blog](https://www.yinwang.org/) style. For a preview, visit [Tokenicrat's Blog](https://blog.bytoken.link).
+A minimalist Hugo theme inspired by [Wang Yin's Blog](https://www.yinwang.org/) style.
 
 > This README is translated by AI. Inaccurate information may exist.
 > 
@@ -84,7 +84,7 @@ Due to the author's limited CSS skills, the styling is minimal with many default
 
 ## Troubleshooting
 
-If Hugo indicates that your version is too low during site building, it's because the author uses Arch Linux and lazily set the minimum version to `0.148.1` in `theme.toml`. Your older Hugo version will likely work fine - just modify the version number.
+If Hugo indicates that your version is too low during site building, it's because the author lazily set the minimum version to `0.148.1` in `theme.toml`. Your older Hugo version will likely work fine - just modify the version number.
 
 ## License
 
